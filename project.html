@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project Details - Maria Metantomwate">
+    <meta name="author" content="Maria Metantomwate">
+    <title>Project Details | Maria's Portfolio</title>
+    
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    
+    <style>
+        /* Penyesuaian khusus jarak agar konten tidak tertutup navbar yang di-affix */
+        body { padding-top: 80px; }
+        
+        /* Memastikan gambar header project proporsional */
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            min-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+        }
+
+        /* Styling spesifik untuk detail konten */
+        .project-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: -80px; /* Efek overlap dengan gambar hero */
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        [data-theme="dark"] .project-content {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+       
+        /* Warna burger menjadi hitam KHUSUS di halaman ini saat Light Mode */
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner,
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner::before,
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner::after {
+        background-color: #000000; 
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <nav class="custom-navbar affix" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">Maria's Portfolio</a>
+            <ul class="nav">
+                <li class="item"><a class="link" href="index.html#home">Home</a></li>
+                <li class="item"><a class="link" href="index.html#about">About</a></li>
+                <li class="item"><a class="link" href="index.html#experience">Experience</a></li>
+                <li class="item"><a class="link" href="index.html#project">Project</a></li>
+                <li class="item"><a class="link" href="index.html#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-primary rounded-circle ml-3" style="width: 40px; height: 40px; padding: 0;">
+                <i id="theme-icon" class="ti-shine"></i>
+            </button>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav>
+    <main class="section pt-4">
+        <div class="container">
+            
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent px-0 mb-3">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#project">Projects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Micromagnetic Simulation for Spintronic Data Storage</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/imgs/headerproject1.jpg" class="project-hero-img shadow-sm" alt="Micromagnetic Simulation Preview">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="project-content">
+                        
+                        <h2 class="section-title mb-4">Micromagnetic Simulation for Spintronic Data Storage</h2>
+                        
+                        <div class="mb-5">
+                            <span class="badge badge-primary mr-2 p-2">Computational Physics</span>
+                            <span class="badge badge-secondary mr-2 p-2">OOMMF</span>
+                            <span class="badge badge-secondary mr-2 p-2">Origin</span>
+                            <span class="badge badge-secondary p-2">Data Analytics</span>
+                        </div>
+
+                        <section class="mb-5"> <h4 class="title mb-4">Overview</h4>
+                        <p class="my-font2">Conducted computational physics research at the National Research and Innovation Agency (BRIN) as part of my undergraduate thesis and professional experience, forming the basis for an upcoming scientific manuscript. The work examined how nanowire dimensions and Dzyaloshinskii-Moriya Interaction (DMI) configurations influence domain wall dynamics in spintronic data storage. I performed 468 micromagnetic simulations using OOMMF and analyzed position, velocity, and energy data, producing structured reports and visualizations that informed research insights and supported the manuscript preparation.</p>
+                        </section>
+
+                        <section class="mb-5">
+    <div class="p-4 rounded shadow-sm" style="background-color: var(--bg-card); border: 1px dashed var(--primary); border-left: 5px solid var(--primary);">
+        <h5 class="title mb-3" style="font-size: 18px;"><i class="ti-info-alt text-primary mr-2"></i> Project Status</h5>
+        <p class="my-font2 mb-0">
+        This project is currently in the process of preparing a manuscript for a conference, so the complete results cannot be shared at this time. However, part of the analysis has been completed as part of my undergraduate thesis, including preliminary data and visualizations that provide insights into domain wall performance trends in nanowires.
+        </p>
+        <hr class="my-3" style="border-top: 1px solid var(--border-color); opacity: 0.2;">
+    </div>
+</section>
+                            
+                        <section class="mb-5"> <h4 class="title mb-4">Introduction</h4>
+                        <p class="my-font2">This concept was first proposed in the early 2000s by Dr. Stuart Parkin, a renowned physicist and researcher at the IBM Almaden Research Center. His fundamental paper on this technology was published in the journal Science in 2008. Parkin sought to create a "solid-state" device—one with no moving parts—that could rival the high storage density of magnetic disk platters.</p>
+                        <p class="my-font2">This is my first research project with BRIN and Dr. Candra Kurniawan, M.Si., and I’m so excited about the topic. It is closely related to quantum and solid-state physics. This research gives me more time and opportunities to learn and improve my understanding.</p>
+                        <p class="my-font2">HDDs and SSDs are non-volatile storage devices that retain data without power. HDDs use spinning platters and are slower than SSDs due to their mechanical components, which limit data access speed. In contrast, SSDs utilize semiconductor-based flash memory, offering significantly higher speed and reliability, albeit at a higher cost [1], [2]. However, SSDs have a limited lifespan due to the Program/Erase (P/E) cycle, although techniques such as wear leveling can extend their operational durability.</p>
+                        <p class="my-font2">Current data storage technologies primarily rely on electrical charge, such as in silicon-based transistors. However, this approach faces fundamental limitations in terms of miniaturization, heat dissipation, and power efficiency as device dimensions approach the nanoscale. Spintronics provides an alternative paradigm by exploiting the electron’s spin degree of freedom instead of charge, enabling faster switching, lower energy consumption, and improved non-volatility [3], [4].</p>
+                        <p class="my-font2">Racetrack Memory is an emerging spintronic storage technology in which digital information is represented by magnetic domains separated by domain walls that move along nanoscopic tracks [5]. A single racetrack can store multiple bits of data, enabling very high storage density. Domain walls are shifted using nanosecond-scale current pulses through mechanisms such as spin-transfer torque (STT) or spin–orbit torque (SOT), allowing high-speed data manipulation [6], [7]. In advanced systems such as synthetic antiferromagnetic racetracks, domain wall velocities can reach the order of ~1 km/s, demonstrating the potential for ultra-fast data transfer. Furthermore, optimized racetrack configurations have the potential to achieve sub-nanosecond operation speeds, making them denser and more efficient than conventional SRAM while maintaining non-volatility [8], [9].</p>
+                        <p class="my-font2">Micromagnetic simulations play a crucial role in the development of racetrack memory, as they enable researchers to model and analyze domain wall dynamics without the need for costly physical prototypes. These simulations are typically based on the Landau–Lifshitz–Gilbert (LLG) equation, which describes the time evolution of magnetization under various physical interactions [13], [14]. Through simulation, researchers can optimize material properties, improve energy efficiency, enhance device durability, and refine writing and reading mechanisms. This approach significantly accelerates the development of racetrack memory as a faster, more efficient, and longer-lasting alternative to conventional storage technologies such as HDDs and SSDs [15], [16].</p>
+                        <div class="row justify-content-center">
+    <div class="col-lg-10 col-md-11"> <div class="embed-responsive embed-responsive-16by9 shadow">
+            <video class="embed-responsive-item" autoplay loop muted playsinline>
+                <source src="assets/video/Introduction1.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+    </div>
+</section>
+                            
+                        <section class="mb-5"> <h4 class="title mb-4">Read/Write Process in Racetrack Memory</h4>
+                        <p class="my-font2">Conventional HDDs store data in magnetic domains formed by groups of microscopic grains with aligned magnetization [1, 2]. Racetrack Memory uses thin nanowires where bits are represented by sequential magnetic domains separated by domain walls (DWs) [5, 17].</p>
+                        <p class="my-font2">Data is written by injecting a current through an injector, using spin-transfer torque (STT) to switch atomic magnetization and create new bits [11, 18, 19]. Domains are then shifted along the wire via current-induced domain wall motion (CIDWM), enabling rapid, mechanical-free data movement [6, 7].</p>
+                        <p class="my-font2">Reading is done with magnetoresistance-based sensors, such as magnetic tunnel junctions (MTJs), which detect resistance changes depending on domain alignment and translate them into binary values [5, 10]. This allows high-speed, efficient data storage compared to conventional HDDs [5, 9].</p>
+                    </section>
+                            
+                        <section class="mb-5"> <h4 class="title mb-4">Domain Wall Motion</h4>
+                        <p class="my-font2">Engineering the motion of domain walls (DW) is a key factor in the development of Racetrack Memory, as it enables high-density data storage in three-dimensional structures, high-speed operation, and low energy consumption due to the absence of moving mechanical parts [5], [8]. Moreover, the dynamics of domain walls exhibit similarities to biological synaptic mechanisms, opening opportunities for applications in spintronic-based neuromorphic computing [12].</p>
+                        <p class="my-font2">Meanwhile, micromagnetic simulations using software such as OOMMF are employed to model magnetic behavior at microscopic scales that are difficult to observe directly in laboratory experiments. These simulations are based on the numerical solution of the Landau–Lifshitz–Gilbert (LLG) equation, which describes the dynamics of magnetization in ferromagnetic materials [13], [14].</p>
+                        <p class="my-font2">Through these simulations, researchers can visualize domain wall dynamics as well as complex structures such as skyrmions on nanosecond timescales. This approach greatly facilitates the optimization of material design and spintronic devices efficiently before proceeding to costly physical fabrication stages [15], [16].</p>
+                        </section>
+                        
+                        <hr class="my-5" style="border-top: 1px solid var(--border-color);">
+
+                        <h4 class="title mb-4">Methodology & Frameworks</h4>
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-3">
+                                <div class="service-card h-100 mb-0" style="padding: 20px;">
+                                    <h6 class="title"><i class="ti-layers-alt text-primary mr-2"></i> Simulation Framework</h6>
+                                    <p class="mb-0 mt-2" style="font-size: 14px; font-weight: 500;">Utilized <strong>OOMMF (Object Oriented MicroMagnetic Framework)</strong> to solve the Landau-Lifshitz-Gilbert (LLG) equation computationally.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="service-card h-100 mb-0" style="padding: 20px;">
+                                    <h6 class="title"><i class="ti-stats-up text-primary mr-2"></i> Data Analytics</h6>
+                                    <p class="mb-0 mt-2" style="font-size: 14px; font-weight: 500;">Processed and visualized massive datasets comprising domain wall velocities and magnetic energy states using <strong>Origin</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-inverted rounded p-4 mb-5 text-center">
+                            <h4 class="title mb-3">Key Impact</h4>
+                            <p class="mb-0" style="font-weight: 500;">The quantitative analysis of DMI and nanowire geometric variables directly informs the architectural design of future highly-efficient spintronic memory devices (Racetrack Memory).</p>
+                        </div>
+
+                        <div class="text-center mt-5 mb-5">
+    <a href="index.html#project" class="btn btn-outline-primary rounded">
+        <i class="ti-arrow-left mr-2"></i> Back to Projects
+    </a>
+</div>
+
+<hr class="my-5" style="border-top: 1px solid var(--border-color);">
+
+                        <section class="mb-5"><h4 class="title mb-4">Reference</h4>
+                        <div class="my-font2" style="font-size: 0.9rem; line-height: 1.8;">
+        <p class="mb-2">[1] Y. Chen and R. H. Victora, “Future prospects of magnetic recording technologies,” 2023.</p>
+        <p class="mb-2">[2] Y. Suzuki and Y. Takahashi, “Trends in high-density data storage technologies,” 2023.</p>
+        <p class="mb-2">[3] S. A. Wolf et al., “Spintronics: A spin-based electronics vision for the future,” <em>Science</em>, vol. 294, no. 5546, pp. 1488–1495, 2001.</p>
+        <p class="mb-2">[4] I. Žutić, J. Fabian, and S. Das Sarma, “Spintronics: Fundamentals and applications,” <em>Reviews of Modern Physics</em>, vol. 76, no. 2, pp. 323–410, 2004.</p>
+        <p class="mb-2">[5] S. S. P. Parkin, M. Hayashi, and L. Thomas, “Magnetic domain-wall racetrack memory,” <em>Science</em>, vol. 320, no. 5873, pp. 190–194, 2008.</p>
+        <p class="mb-2">[6] A. Thiaville et al., “Micromagnetic understanding of current-driven domain wall motion in patterned nanowires,” <em>Europhysics Letters</em>, vol. 69, no. 6, pp. 990–996, 2005.</p>
+        <p class="mb-2">[7] S.-H. Yang et al., “Domain-wall velocities of up to 750 m/s driven by exchange-coupling torque in synthetic antiferromagnets,” <em>Nature Nanotechnology</em>, vol. 10, pp. 221–226, 2015.</p>
+        <p class="mb-2">[8] S. S. P. Parkin and S.-H. Yang, “Memory on the racetrack,” <em>Nature Nanotechnology</em>, vol. 10, pp. 195–198, 2015.</p>
+        <p class="mb-2">[9] P. Barla et al., “Spintronic devices and advanced memory technologies: A review,” 2021.</p>
+        <p class="mb-2">[10] E. Chen et al., “Advances and future prospects of spin-transfer torque random access memory,” <em>IEEE Transactions on Magnetics</em>, vol. 46, no. 6, pp. 1873–1878, 2010.</p>
+        <p class="mb-2">[11] J. Grollier et al., “Spintronic devices for logic and memory applications,” 2011.</p>
+        <p class="mb-2">[12] J. Grollier, D. Querlioz, and M. D. Stiles, “Spintronic devices for neuromorphic computing,” <em>Proceedings of the IEEE</em>, vol. 104, no. 10, pp. 2024–2039, 2016.</p>
+        <p class="mb-2">[13] M. J. Donahue and D. G. Porter, <em>OOMMF User’s Guide</em>, NIST, 1999.</p>
+        <p class="mb-2">[14] T. L. Gilbert, “A phenomenological theory of damping in ferromagnetic materials,” <em>IEEE Transactions on Magnetics</em>, vol. 40, no. 6, pp. 3443–3449, 2004.</p>
+        <p class="mb-2">[15] J. M. D. Coey and S. S. P. Parkin, <em>Magnetism and Magnetic Materials</em>. Cambridge University Press, 2021.</p>
+        <p class="mb-2">[16] M. Diba et al., “Micromagnetic simulations for next-generation spintronic devices,” 2024.</p>
+        <p class="mb-2">[17] A. Hubert and R. Schäfer, <em>Magnetic Domains: The Analysis of Magnetic Microstructures</em>. Springer, 2009.</p>
+        <p class="mb-2">[18] J. C. Slonczewski, “Current-driven excitation of magnetic multilayers,” <em>Journal of Magnetism and Magnetic Materials</em>, vol. 159, pp. L1–L7, 1996.</p>
+        <p class="mb-2">[19] L. Berger, “Emission of spin waves by a magnetic multilayer traversed by a current,” <em>Physical Review B</em>, vol. 54, no. 13, pp. 9353–9358, 1996.</p>
+    </div>
+</section>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="container mt-5">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a>mariaampimpyenan</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="mailto:mariametantomwate@gmail.com" class="link"><i class="ti-email"></i></a>
+                <a href="https://www.linkedin.com/in/maria-metantomwate/" target="_blank" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/mariaampimpyenan/" target="_blank" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://twitter.com/mariampimpyenan" target="_blank" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="https://github.com/mariaampimpyenan" target="_blank" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> 
+    
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+
+    <script>
+    const btn = document.getElementById("theme-toggle");
+    const icon = document.getElementById("theme-icon");
+    const currentTheme = localStorage.getItem("theme");
+
+    // Cek apakah user sebelumnya sudah memilih dark mode
+    if (currentTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        if(icon) icon.classList.replace("ti-light-bulb", "ti-shine");
+    }
+
+    if(btn) {
+        btn.addEventListener("click", function () {
+            let theme = "light";
+            if (document.documentElement.getAttribute("data-theme") !== "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+                theme = "dark";
+                icon.classList.replace("ti-light-bulb", "ti-shine");
+            } else {
+                document.documentElement.removeAttribute("data-theme");
+                icon.classList.replace("ti-shine", "ti-light-bulb");
+            }
+            localStorage.setItem("theme", theme);
+        });
+    }
+    </script>
+</body>
+</html>
