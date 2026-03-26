@@ -12887,14 +12887,14 @@ p a:hover {
     text-decoration: none !important; /* Garis bawah hilang saat di-hover */
 }
 
-/* Perbaikan jarak tombol khusus untuk tampilan HP/Tablet */
 @media (max-width: 991.98px) {
     .header-content a {
-        display: inline-block; /* Memastikan elemen <a> bisa memiliki margin */
-        margin-bottom: 15px;   /* Memberikan jarak ke bawah saat tombol bertumpuk */
+        display: inline-block !important;
+        margin-bottom: 20px !important; /* Jarak diperbesar agar terlihat jelas */
     }
-
+    
     .header-content a.ml-2 {
-        margin-left: 0 !important; /* Menghapus margin kiri di mobile agar tetap simetris */
+        margin-left: 0 !important;
+        margin-top: 10px !important;
     }
 }
