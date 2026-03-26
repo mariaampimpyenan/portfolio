@@ -12886,3 +12886,15 @@ p a:hover {
     color: var(--secondary) !important; /* Berubah ke warna secondary saat hover */
     text-decoration: none !important; /* Garis bawah hilang saat di-hover */
 }
+
+/* Perbaikan jarak tombol khusus untuk tampilan HP/Tablet */
+@media (max-width: 991.98px) {
+    .header-content a {
+        display: inline-block; /* Memastikan elemen <a> bisa memiliki margin */
+        margin-bottom: 15px;   /* Memberikan jarak ke bawah saat tombol bertumpuk */
+    }
+
+    .header-content a.ml-2 {
+        margin-left: 0 !important; /* Menghapus margin kiri di mobile agar tetap simetris */
+    }
+}
