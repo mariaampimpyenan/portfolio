@@ -76,7 +76,7 @@
   --footer-bg: #000000;
   /* Header & Overlay */
   --header-bg-img: url('../imgs/chip-dark.jpg');
-  --overlay-color: rgba(0, 0, 0, 0.6); /* Transparan tipis */
+  --overlay-color: rgba(0, 0, 0, 0.4); /* Transparan tipis */
 }
 
 *,
@@ -11671,9 +11671,11 @@ pre .code {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+  -webkit-transition: all, 0.3s ease;
+  transition: all, 0.3s ease;
   font-family: 'Baloo Paaji', cursive;
+  background-color: transparent !important; /* Membuat navbar transparan di awal */
+  border-bottom: none !important; /* Menghilangkan garis pembawah */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12102,6 +12104,7 @@ pre .code {
 
 .header {
   position: relative;
+  margin-top: 0;
   height: 100vh;
   min-height: 600px;
   display: -webkit-box;
@@ -12119,7 +12122,7 @@ pre .code {
   background-image: var(--header-bg-img) !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   transition: background-image 0.5s ease; /* Agar transisi gambar halus */
 }
 
@@ -12129,7 +12132,9 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--overlay-color);
+  background: linear-gradient(to bottom, 
+                var(--overlay-color) 0%, 
+                var(--bg-body) 100%) !important;
 }
 
 .header .header-content {
