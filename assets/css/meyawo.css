@@ -76,7 +76,6 @@
   --footer-bg: #000000;
   /* Header & Overlay */
   --header-bg-img: url('../imgs/chip-dark.jpg');
-  --overlay-color: rgba(0, 0, 0, 0.6); /* Transparan tipis */
 }
 
 *,
@@ -6979,12 +6978,19 @@ a.close.disabled {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
   -webkit-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
+  width: 40px;      /* Ukuran lebar lingkaran */
+  height: 40px;     /* Ukuran tinggi lingkaran */
+  background-color: #ffffff; /* Warna lingkaran putih */
+  border-radius: 50%;        /* Membuat bentuk lingkaran */
+  top: 50%;                  /* Posisi di tengah secara vertikal */
+  transform: translateY(-50%);
+  opacity: 0.8;              /* Sedikit transparan agar estetik */
+  margin: 0 15px;           /* Memberi jarak dari tepi gambar */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6995,13 +7001,24 @@ a.close.disabled {
   }
 }
 
-.carousel-control-prev:hover, .carousel-control-prev:focus,
-.carousel-control-next:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 1;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.carousel-control-prev:focus,
 .carousel-control-next:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
+  background-color: #808080;
+  opacity: 1;
 }
 
 .carousel-control-prev {
@@ -7018,6 +7035,8 @@ a.close.disabled {
   width: 20px;
   height: 20px;
   background: no-repeat 50% / 100% 100%;
+  /* Menambah filter agar ikon menjadi hitam pekat */
+  filter: invert(1) grayscale(100%) brightness(0);
 }
 
 .carousel-control-prev-icon {
@@ -12129,7 +12148,7 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--overlay-color);
+  background: linear-gradient(to top, var(--bg-body) 0%, transparent 70%);
 }
 
 .header .header-content {
