@@ -76,7 +76,7 @@
   --footer-bg: #000000;
   /* Header & Overlay */
   --header-bg-img: url('../imgs/chip-dark.jpg');
-  --overlay-color: rgba(0, 0, 0, 0.4); /* Transparan tipis */
+  --overlay-color: rgba(0, 0, 0, 0.6); /* Transparan tipis */
 }
 
 *,
@@ -11671,11 +11671,9 @@ pre .code {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all, 0.3s ease;
-  transition: all, 0.3s ease;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
   font-family: 'Baloo Paaji', cursive;
-  background-color: transparent !important; /* Membuat navbar transparan di awal */
-  border-bottom: none !important; /* Menghilangkan garis pembawah */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12104,7 +12102,6 @@ pre .code {
 
 .header {
   position: relative;
-  margin-top: 0;
   height: 100vh;
   min-height: 600px;
   display: -webkit-box;
@@ -12122,7 +12119,7 @@ pre .code {
   background-image: var(--header-bg-img) !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   transition: background-image 0.5s ease; /* Agar transisi gambar halus */
 }
 
@@ -12132,9 +12129,7 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, 
-                var(--overlay-color) 0%, 
-                var(--bg-body) 100%) !important;
+  background: var(--overlay-color);
 }
 
 .header .header-content {
@@ -12892,14 +12887,14 @@ p a:hover {
     text-decoration: none !important; /* Garis bawah hilang saat di-hover */
 }
 
+/* Perbaikan jarak tombol khusus untuk tampilan HP/Tablet */
 @media (max-width: 991.98px) {
     .header-content a {
-        display: inline-block !important;
-        margin-bottom: 20px !important; /* Jarak diperbesar agar terlihat jelas */
+        display: inline-block; /* Memastikan elemen <a> bisa memiliki margin */
+        margin-bottom: 15px;   /* Memberikan jarak ke bawah saat tombol bertumpuk */
     }
-    
+
     .header-content a.ml-2 {
-        margin-left: 0 !important;
-        margin-top: 10px !important;
+        margin-left: 0 !important; /* Menghapus margin kiri di mobile agar tetap simetris */
     }
 }
