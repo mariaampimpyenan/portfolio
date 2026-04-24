@@ -12954,3 +12954,41 @@ p a:hover {
         display: flex;
     }
 }
+
+/* =========================================
+   ARROW SCROLL WITHOUT CIRCLE (ALWAYS VISIBLE)
+   ========================================= */
+
+.nav-arrow {
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    color: #695aa6; /* warna brand */
+
+    font-size: 32px;
+    font-weight: bold;
+
+    /* bantu kontras di semua foto */
+    text-shadow:
+        0 0 4px rgba(0, 0, 0, 0.35),
+        0 0 8px rgba(255, 255, 255, 0.25);
+
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.nav-arrow:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* tetap posisinya */
+.nav-arrow.left {
+    left: 10px;
+}
+
+.nav-arrow.right {
+    right: 10px;
+}
