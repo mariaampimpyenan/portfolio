@@ -13010,3 +13010,32 @@ p a:hover {
         flex: 0 0 85vw;
     }
 }
+
+/* =====================================
+   CENTER BSc THESIS BUTTON (MOBILE SAFE)
+   ===================================== */
+
+#about .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* pastikan anchor tidak punya offset */
+#about .header-content a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* KUNCI: CENTER DI HP */
+@media (max-width: 1024px) {
+    #about .header-content button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 320px;
+    }
+}
