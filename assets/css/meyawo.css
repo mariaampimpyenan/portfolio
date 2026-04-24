@@ -14,13 +14,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
-  /* Brand Colors */
-  --primary: #695aa6;
-  --secondary: #393e46;
-  --success: #1bb74f;
-  --danger: #ec185d;
-  
-  /* Light Mode (Default) */
+  /* === Theme Mode (Light - Default) === */
   --bg-body: #ffffff;
   --bg-card: #ffffff;
   --text-main: #000000;
@@ -30,7 +24,19 @@
   --nav-border: rgba(0, 0, 0, 0.1);
   --border-color: #eeeeee;
   --footer-bg: #f8f9fa;
+  --header-bg-img: url('../imgs/chip-light.jpg');
   
+  /* === Brand Colors === */
+  --primary: #695aa6;
+  --secondary: #393e46;
+  --success: #1bb74f;
+  --info: #17a2b8;
+  --warning: #ff6d02;
+  --danger: #ec185d;
+  --light: #f8f9fa;
+  --dark: #212529;
+  
+  /* === Extended Color Palette === */
   --blue: #1e549f;
   --indigo: #695aa6;
   --purple: #6f42c1;
@@ -44,23 +50,20 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #393e46;
-  --primary: #695aa6;
-  --secondary: #393e46;
-  --success: #1bb74f;
-  --info: #17a2b8;
-  --warning: #ff6d02;
-  --danger: #ec185d;
-  --light: #f8f9fa;
-  --dark: #212529;
+  
+  /* === Breakpoints === */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  
+  /* === Typography === */
   --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --header-bg-img: url('../imgs/chip-light.jpg');
-  --overlay-color: rgba(255, 255, 255, 0.5); /* Transparan tipis */
+  
+  /* === Effects === */
+  --overlay-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Dark Mode Overrides */
@@ -74,9 +77,12 @@
   --nav-border: rgba(255, 255, 255, 0.1);
   --border-color: #222222;
   --footer-bg: #000000;
-  /* Header & Overlay */
   --header-bg-img: url('../imgs/chip-dark.jpg');
 }
+
+/* ============================================================================
+   1. BASE STYLES & RESETS
+   ============================================================================ */
 
 *,
 *::before,
@@ -101,11 +107,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--bg-body); /* Gunakan variabel */
-  color: var(--text-main);           /* Gunakan variabel */
+  background-color: var(--bg-body);
+  color: var(--text-main);
   text-align: left;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* ============================================================================
+   2. TYPOGRAPHY & HEADINGS
+   ============================================================================ */
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -499,6 +509,10 @@ mark,
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
+
+/* ============================================================================
+   3. LAYOUT & GRID SYSTEM
+   ============================================================================ */
 
 .initialism {
   font-size: 90%;
@@ -1853,6 +1867,10 @@ pre code {
   }
 }
 
+/* ============================================================================
+   4. COMPONENTS - TABLES
+   ============================================================================ */
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -2195,6 +2213,10 @@ pre code {
 .table-responsive > .table-bordered {
   border: 0;
 }
+
+/* ============================================================================
+   5. COMPONENTS - FORMS & INPUTS
+   ============================================================================ */
 
 .form-control {
   display: block;
@@ -2758,6 +2780,10 @@ textarea.form-control {
     margin-bottom: 0;
   }
 }
+
+/* ============================================================================
+   6. COMPONENTS - BUTTONS
+   ============================================================================ */
 
 .btn {
   display: inline-block;
@@ -3382,6 +3408,10 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+
+/* ============================================================================
+   7. COMPONENTS - NAVIGATION & DROPDOWNS
+   ============================================================================ */
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
@@ -4486,6 +4516,10 @@ input[type="button"].btn-block {
   }
 }
 
+/* ============================================================================
+   8. COMPONENTS - CARDS & LAYOUT COMPONENTS
+   ============================================================================ */
+
 .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5359,6 +5393,10 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
+/* ============================================================================
+   9. COMPONENTS - BREADCRUMBS & PAGINATION
+   ============================================================================ */
+
 .breadcrumb {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5498,6 +5536,10 @@ input[type="button"].btn-block {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
 }
+
+/* ============================================================================
+   10. COMPONENTS - BADGES, ALERTS & PROGRESS
+   ============================================================================ */
 
 .badge {
   display: inline-block;
@@ -5894,6 +5936,10 @@ a.badge-dark:focus, a.badge-dark.focus {
             animation: none;
   }
 }
+
+/* ============================================================================
+   11. COMPONENTS - MEDIA, TOAST & MODAL
+   ============================================================================ */
 
 .media {
   display: -webkit-box;
@@ -6866,6 +6912,10 @@ a.close.disabled {
   color: #212529;
 }
 
+/* ============================================================================
+   12. COMPONENTS - CAROUSEL, SPINNERS & ADVANCED
+   ============================================================================ */
+
 .carousel {
   position: relative;
 }
@@ -6978,19 +7028,12 @@ a.close.disabled {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 15%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
   -webkit-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
-  width: 40px;      /* Ukuran lebar lingkaran */
-  height: 40px;     /* Ukuran tinggi lingkaran */
-  background-color: #ffffff; /* Warna lingkaran putih */
-  border-radius: 50%;        /* Membuat bentuk lingkaran */
-  top: 50%;                  /* Posisi di tengah secara vertikal */
-  transform: translateY(-50%);
-  opacity: 0.8;              /* Sedikit transparan agar estetik */
-  margin: 0 15px;           /* Memberi jarak dari tepi gambar */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7001,24 +7044,13 @@ a.close.disabled {
   }
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: 1;
-  background-color: transparent;
-  opacity: 1;
-}
-
-.carousel-control-prev:focus,
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
 .carousel-control-next:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 1;
-  background-color: #808080;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .carousel-control-prev {
@@ -7035,8 +7067,6 @@ a.close.disabled {
   width: 20px;
   height: 20px;
   background: no-repeat 50% / 100% 100%;
-  /* Menambah filter agar ikon menjadi hitam pekat */
-  filter: invert(1) grayscale(100%) brightness(0);
 }
 
 .carousel-control-prev-icon {
@@ -7179,6 +7209,10 @@ a.close.disabled {
   width: 1rem;
   height: 1rem;
 }
+
+/* ============================================================================
+   13. UTILITIES - ALIGNMENT, DISPLAY & SPACING
+   ============================================================================ */
 
 .align-baseline {
   vertical-align: baseline !important;
@@ -12814,13 +12848,11 @@ html body .portfolio-card-overlay .portfolio-card-caption span {
     border: none;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
     z-index: 10;
     transition: 0.3s;
 }
-
-.nav-arrow:hover { background: var(--secondary); }
 
 /* Responsif */
 @media (max-width: 992px) {
@@ -12839,7 +12871,7 @@ html body .portfolio-card-overlay .portfolio-card-caption span {
 
 /* Mengatur posisi tombol panah carousel */
 .carousel-control-prev, .carousel-control-next {
-    width: 10%; /* Memperkecil area klik agar tidak menutupi gambar */
+    width: 20%; /* Memperkecil area klik agar tidak menutupi gambar */
 }
 
 /* Memastikan teks deskripsi mengisi sisa ruang agar tinggi kotak sejajar */
@@ -12992,3 +13024,36 @@ p a:hover {
 .nav-arrow.right {
     right: 10px;
 }
+
+/* =========================================================
+   Remove nav-arrow circle / focus ring completely
+   (Other Activities & Certificates)
+   ========================================================= */
+
+.nav-arrow {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-arrow:focus,
+.nav-arrow:active,
+.nav-arrow:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-arrow::before,
+.nav-arrow::after {
+  content: none;
+}
+
+/* Make navigation arrows thicker & clean */
+.nav-arrow i {
+  font-size: 36px;         /* lebih besar */
+  font-weight: 900;       /* paling tebal */
+  color: var(--primary);  /* ungu Meyawo */
+  line-height: 1;
+}
+
