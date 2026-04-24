@@ -12917,3 +12917,30 @@ p a:hover {
         margin-left: 0 !important; /* Menghapus margin kiri di mobile agar tetap simetris */
     }
 }
+
+/* ===== Mobile layout: Other Activities like Experiences ===== */
+@media (max-width: 767.98px) {
+
+    /* Matikan horizontal scroll */
+    .activities-viewport {
+        overflow-x: hidden;
+    }
+
+    .activities-container {
+        flex-direction: column;
+    }
+
+    .activity-item {
+        min-width: 100%;
+        flex-basis: 100%;
+    }
+
+    /* Optional: samakan feel dengan experience card */
+    .activity-inner {
+        border-radius: 12px;
+    }
+
+    .activity-img-wrap {
+        height: 220px;
+    }
+}
