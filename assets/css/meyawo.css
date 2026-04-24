@@ -12918,42 +12918,39 @@ p a:hover {
     }
 }
 
-/* FIX OTHER ACTIVITIES - MOBILE */
-#activities .activities-viewport {
-    width: 100%;
-    overflow-x: auto;
-}
+/* =========================================
+   SWIPE ON MOBILE, BUTTON SCROLL ON DESKTOP
+   (Other Activities & Certificates)
+   ========================================= */
 
-#activities .activities-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    padding: 0 15px;
-}
+/* ===== MOBILE & TABLET PORTRAIT: SWIPE ENABLED ===== */
+@media (max-width: 900px) and (orientation: portrait) {
 
-@media (max-width: 768px) {
-    #activities .activity-item {
-        flex: 0 0 90%;
-        max-width: 90%;
-        margin: 0 auto;
+    #activities .activities-viewport,
+    #certification .activities-viewport {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    #activities .nav-arrow {
+    /* sembunyikan tombol panah */
+    #activities .nav-arrow,
+    #certification .nav-arrow {
         display: none;
     }
 }
 
-/* =========================================
-   MARIA'S B.SC. THESIS - LEFT ALIGN ALL SCREENS
-   ========================================= */
+/* ===== DESKTOP & TABLET LANDSCAPE: BUTTON ONLY ===== */
+@media (min-width: 901px),
+       (orientation: landscape) {
 
-#about .header-content {
-    text-align: left;
-    margin-top: 20px;
-}
+    #activities .activities-viewport,
+    #certification .activities-viewport {
+        overflow-x: hidden; /* matikan swipe */
+    }
 
-#about .header-content a,
-#about .header-content button {
-    display: inline-block;
-    margin-left: 0;
+    /* tampilkan panah */
+    #activities .nav-arrow,
+    #certification .nav-arrow {
+        display: flex;
+    }
 }
