@@ -13057,3 +13057,26 @@ p a:hover {
   line-height: 1;
 }
 
+/* ==============================
+   FORCE DESKTOP VIEW ON MOBILE
+   only for non-index pages
+================================ */
+
+@media (max-width: 991.98px) {
+
+  body.force-desktop {
+    min-width: 1200px;
+    overflow-x: auto;
+  }
+
+  body.force-desktop .container,
+  body.force-desktop .container-fluid {
+    max-width: 1140px !important;
+    min-width: 1140px !important;
+  }
+
+  body.force-desktop .row {
+    flex-wrap: nowrap;
+  }
+
+}
