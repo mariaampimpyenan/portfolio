@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G11HE1FMXN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G11HE1FMXN');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="IoT Project Details - Maria Metantomwate">
+    <meta name="author" content="Maria Metantomwate">
+    <title>Fire Suppression System | Maria's Portfolio</title>
+    
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    
+    <style>
+        /* Penyesuaian khusus jarak agar konten tidak tertutup navbar yang di-affix */
+        body { padding-top: 80px; }
+        
+        /* Memastikan gambar header project proporsional */
+        .project-hero-img {
+            width: 100%;
+            height: auto;
+            min-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+        }
+
+        /* Styling spesifik untuk detail konten */
+        .project-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: -80px; /* Efek overlap dengan gambar hero */
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        [data-theme="dark"] .project-content {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* Warna burger menjadi hitam KHUSUS di halaman ini saat Light Mode */
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner,
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner::before,
+    html:not([data-theme="dark"]) .custom-navbar .hamburger .hamburger-inner::after {
+        background-color: #000000; 
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <nav class="custom-navbar affix" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="index.html">Maria's Portfolio</a>
+            <ul class="nav">
+                <li class="item"><a class="link" href="index.html#home">Home</a></li>
+                <li class="item"><a class="link" href="index.html#about">About</a></li>
+                <li class="item"><a class="link" href="index.html#experience">Experience</a></li>
+                <li class="item"><a class="link" href="index.html#project">Project</a></li>
+                <li class="item"><a class="link" href="index.html#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-primary rounded-circle ml-3" style="width: 40px; height: 40px; padding: 0;">
+                <i id="theme-icon" class="ti-shine"></i>
+            </button>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav>
+
+    <main class="section pt-4">
+        <div class="container">
+            
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent px-0 mb-3">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#project">Projects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fire Suppression System</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/imgs/headproject3.jpg" class="project-hero-img shadow-sm" alt="Fire Supression Preview">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="project-content">
+                        
+                        <h2 class="section-title mb-4">Fire Suppression System Using MQ2 and MQ9 Sensors Integrated with a Microcontroller</h2>
+                        
+                        <div class="mb-5">
+                            <span class="badge badge-primary mr-2 p-2">Microcontroller</span>
+                            <span class="badge badge-secondary mr-2 p-2">C++</span>
+                            <span class="badge badge-secondary p-2">Hardware Assembly</span>
+                        </div>
+
+                         <section class="mb-5"> <h4 class="title mb-4">Overview</h4>
+                        <p class="my-font2">This project presents the design of an automated fire suppression system using cost-effective and accessible electronic components as a practical implementation of embedded systems. The system detects smoke and hazardous gases—LPG, carbon monoxide (CO), and methane (CH₄)—using MQ-2 and MQ-9 sensors, with an Arduino Uno as the central processing unit. When gas concentrations exceed 300 ppm, the system automatically triggers a buzzer for early warning and activates a relay-controlled water pump to suppress potential fire hazards.</p>
+
+                        </section>
+                        
+                        <section class="mb-5"> <h4 class="title mb-4">Background</h4>
+                        <p class="my-font2">Fire outbreaks represent a significant threat to both property and human life, often resulting in devastating material losses and serious injuries. In such emergencies, early detection and rapid response are critical factors in minimizing negative impacts. This research was driven by the need for an affordable yet reliable fire prevention system that can operate automatically without human intervention. By integrating MQ-series gas sensors with an Arduino microcontroller, the system addresses the danger of invisible flammable gases and smoke that often go undetected until a fire has already spread. The goal is to accelerate response times, allowing for faster evacuation and immediate mitigation through automated suppression.</p>
+                        </section>
+
+                        <div class="row mb-5">
+    <div class="col-12 text-center">
+        <div class="schematic-card p-4 border-0 shadow-sm">
+            <img src="assets/imgs/fire1.png" class="img-fluid rounded" alt="Circuit Schematic ESP32 Gas Detector">
+            <p class="mt-3 schematic-caption">
+                <strong>Figure 1.</strong> Documentation of the assembly on the prototype.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+                        <section class="mb-5"> <h4 class="title mb-4">Flowchart & Wiring Diagram</h4>
+                        <p class="my-font2">The hardware architecture of this fire suppression system is centered around the Arduino Uno, which acts as the main controller. The system employs a dual-sensor configuration: the MQ-2 sensor detects smoke and flammable gases, while the MQ-9 sensor monitors carbon monoxide (CO) and LPG concentrations. Both sensors are connected to the Arduino’s analog input pins (A0 and A1), enabling continuous air quality monitoring.</p>
+                        <p class="my-font2">The system operates through a structured sequence. First, the Arduino continuously acquires analog voltage data from both sensors. The data is then processed and compared against a predefined safety threshold of 300 ppm. If the detected gas concentration exceeds this limit, the Arduino sends a HIGH signal to digital pins 3 and 4. This action triggers the buzzer to provide an audible alert and activates the relay module, which powers the water pump to suppress potential fire hazards.</p>
+                    
+                    </section>
+
+                        <div class="row mb-5">
+    <div class="col-12 text-center">
+        <div class="schematic-card p-4 border-0 shadow-sm">
+            <img src="assets/imgs/fire2.png" class="img-fluid rounded" alt="Circuit Schematic ESP32 Gas Detector">
+            <p class="mt-3 schematic-caption">
+                <strong>Figure 2.</strong> Flowchart of Fire Suppression Systems.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="row mb-5">
+    <div class="col-12 text-center">
+        <div class="schematic-card p-4 border-0 shadow-sm">
+            <img src="assets/imgs/fire3.png" class="img-fluid rounded" alt="Circuit Schematic ESP32 Gas Detector">
+            <p class="mt-3 schematic-caption">
+                <strong>Figure 3.</strong> The complete wiring diagram showcasing the integration between Arduino, MQ-Series sensors, Buzzer, Relay Module, and Water Pump.
+            </p>
+        </div>
+    </div>
+</div>
+                        
+                        <hr class="my-5" style="border-top: 1px solid var(--border-color);">
+
+                        <h4 class="title mb-4">Methodology & Frameworks</h4>
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-3">
+                                <div class="service-card h-100 mb-0" style="padding: 20px;">
+                                    <h6 class="title"><i class="ti-settings text-primary mr-2"></i> Hardware Architecture</h6>
+                                    <p class="mb-0 mt-2" style="font-size: 14px; font-weight: 500;">The system uses an Arduino Uno as the central microcontroller, connected to MQ-2 and MQ-9 sensors to monitor smoke, LPG, and carbon monoxide (CO). A relay module is integrated to automatically control a water pump, enabling immediate fire suppression when hazardous gas levels are detected.</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="service-card h-100 mb-0" style="padding: 20px;">
+                                    <h6 class="title"><i class="ti-control-shuffle text-primary mr-2"></i> Algorithmic Control & Calibration</h6>
+                                    <p class="mb-0 mt-2" style="font-size: 14px; font-weight: 500;">Firmware developed in C/C++ runs a real-time loop that converts analog sensor readings into gas concentrations (ppm). Using a threshold-based framework set at 300 ppm, the system triggers a dual-response protocol: activating the buzzer for an audible alert and engaging the water pump simultaneously to mitigate fire risks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-inverted rounded p-4 mb-5 text-center">
+                            <h4 class="title mb-3">Key Impact</h4>
+                            <p class="mb-0" style="font-weight: 500;">Provides an autonomous early-warning system that enhances residential safety by detecting hazardous gases and triggering immediate fire suppression. Using calibrated sensors with a 300 ppm threshold, it offers a reliable and cost-effective application of electronics for mitigating environmental hazards.</p>
+
+                            </div>
+
+                        <section class="mb-5 pb-4">
+    <hr class="my-3" style="border-top: 1px solid var(--border-color);">
+    
+    <div class="row align-items-center mb-5">
+        <div class="col-md-8">
+            <h4 class="title mb-3">Project Resources</h4>
+            <p class="my-font2">The complete source code for the hardware integration (Arduino Uno) is available on my GitHub repository.</p>
+        </div>
+        <div class="col-md-4 text-md-right">
+            <a href="https://github.com/mariaampimpyenan" target="_blank" class="btn btn-primary rounded shadow-sm">
+                <i class="ti-github mr-2"></i> View on GitHub
+            </a>
+        </div>
+    </div>
+
+<div class="py-2"></div>
+
+<section class="mb-5">
+    <div class="p-4 rounded shadow-sm" style="background-color: var(--bg-card); border: 1px dashed var(--primary); border-left: 5px solid var(--primary);">
+        <h5 class="title mb-3" style="font-size: 18px;"><i class="ti-info-alt text-primary mr-2"></i> Project Notes</h5>
+        <p class="my-font2 mb-0">
+            This project was a collaborative team effort involving four members as part of a <strong>Digital Electronics</strong> course. My primary contributions focused on the <strong>hardware assembly</strong> and <strong>Arduino IDE programming</strong>, where I implemented the calibration logic and automated response system. While the initial conceptual inspiration was derived from educational resources on YouTube, our team customized the design to include a dual-sensor configuration for enhanced detection accuracy.
+            </p>
+    </div>
+</section>
+
+<div class="text-center pb-5">
+    <a href="index.html#project" class="btn btn-outline-primary rounded">
+        <i class="ti-arrow-left mr-2"></i> Back to Projects
+    </a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="container mt-5">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy;mariaampimpyenan</p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="mailto:mariametantomwate@gmail.com" class="link"><i class="ti-email"></i></a>
+                <a href="https://www.linkedin.com/in/maria-metantomwate/" target="_blank" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/mariaampimpyenan/" target="_blank" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://twitter.com/mariampimpyenan" target="_blank" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="https://github.com/mariaampimpyenan" target="_blank" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> 
+    
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        const btn = document.getElementById("theme-toggle");
+        const icon = document.getElementById("theme-icon");
+        const currentTheme = localStorage.getItem("theme");
+
+        // Cek apakah user sebelumnya sudah memilih dark mode
+        if (currentTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+            icon.classList.replace("ti-light-bulb", "ti-shine");
+        }
+
+        btn.addEventListener("click", function () {
+            let theme = "light";
+            if (document.documentElement.getAttribute("data-theme") !== "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+                theme = "dark";
+                icon.classList.replace("ti-light-bulb", "ti-shine");
+            } else {
+                document.documentElement.removeAttribute("data-theme");
+                icon.classList.replace("ti-shine", "ti-light-bulb");
+            }
+            // Simpan pilihan ke storage
+            localStorage.setItem("theme", theme);
+        });
+    </script>
+</body>
+</html>
